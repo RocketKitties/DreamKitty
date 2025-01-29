@@ -10,7 +10,6 @@
 			"Question",
 			"Comment",
 			"Feature Request",
-			"Setting Up My Own Instance",
 			"Bug Report",
 			"Other"
 		],
@@ -21,9 +20,9 @@
 		"show_app_launcher": true,
 		"preferences": {
 			"desktop_apps": {
-				"phone": ["app_launcher"],
-				"tablet": ["app_launcher"],
-				"desktop": ["file_browser", "communicator"]
+				"phone": ["image_viewer"],
+				"tablet": ["image_viewer", "topic_viewer"],
+				"desktop": ["image_viewer", "topic_viewer"]
 			},
 			"admin_apps": {
 				"phone": ["app_launcher"],
@@ -48,22 +47,35 @@
 	"help": {
 		"show_app": true,
 		"show_pdf": false,
-		"show_topic": "Sharedigm",
+		"show_topic": "Dreamachines",
 		"show_contact": true
+	},
+
+	"image_generators": {
+		"stability.ai": {
+			"logo": "images/logos/partners/stability-ai-logo-white.svg",
+			"url": "https://stability.ai"
+		},
+		"OpenAI": {
+			"logo": "images/logos/partners/open-ai-logo-white.svg",
+			"url": "https://openai.com"
+		},
+		"DeepAI": {
+			"logo": "images/logos/partners/deep-ai-logo.svg",
+			"url": "https://deepai.org"
+		},
+		"Stable Diffusion API": {
+			"logo": "images/logos/partners/stable-diffusion-api-logo.svg",
+			"url": "https://stablediffusionapi.com"
+		}
 	},
 
 	"releases": {
 	},
 
-	"search": {
-		"placeholder": "Search for terms or text.",
-		"options": ["view_kind", "detail_kind", "create_date"],
-		"hidden": true,
-		"index": {
-			"name": "search index",
-			"icon": "<i class=\"fa fa-search\"></i>"
-		},
-		"directory": "/Shared"
+	"search (disabled)": {
+		"directory": "/Shared",
+		"placeholder": "Search"
 	},
 
 	"settings": {
@@ -78,26 +90,6 @@
 			"Files": {
 				"icon": "fa fa-file",
 				"directory": ""
-			},
-			"Audio": {
-				"icon": "fa fa-volume-up",
-				"directory": "Audio/"
-			},
-			"Music": {
-				"icon": "fa fa-music",
-				"directory": "Music/"
-			},
-			"Pictures": {
-				"icon": "fa fa-image",
-				"directory": "Pictures/"
-			},
-			"Videos": {
-				"icon": "fa fa-video",
-				"directory": "Videos/"
-			},
-			"Maps": {
-				"icon": "fa fa-map",
-				"directory": "Maps/"
 			}
 		},
 		"uploads": true,
@@ -138,96 +130,5 @@
 		"content": [
 			"p", ".section li"
 		]
-	},
-
-	"websites": {
-		"Categories": {
-			"homepage": {
-				"icon": "fa fa-home",
-				"label": "Homepage"
-			},
-			"blog": {
-				"icon": "fa fa-comment",
-				"label": "Blog"						
-			},
-			"business": {
-				"icon": "fa fa-money-bill",
-				"label": "Business"						
-			},
-			"photos": {
-				"icon": "fa fa-camera",
-				"label": "Photos"						
-			},
-			"videos": {
-				"icon": "fa fa-video",
-				"label": "Videos"						
-			},
-			"music": {
-				"icon": "fa fa-music",
-				"label": "Music"						
-			},
-			"portfolio": {
-				"icon": "fa fa-briefcase",
-				"label": "Portfolio"						
-			},
-			"interest": {
-				"icon": "fa fa-smile",
-				"label": "Interest"						
-			},
-			"social": {
-				"icon": "fa fa-users",
-				"label": "Social"						
-			}
-		},
-		"Commercial": {
-			"etsy": {
-				"icon": "fab fa-etsy",
-				"label": "Etsy"						
-			},
-			"facebook": {
-				"icon": "fab fa-facebook-official",
-				"label": "Facebook"						
-			},
-			"flickr": {
-				"icon": "fab fa-flickr",
-				"label": "Flickr"						
-			},
-			"github": {
-				"icon": "fab fa-github",
-				"label": "GitHub"						
-			},
-			"instagram": {
-				"icon": "fab fa-instagram",
-				"label": "Instagram"						
-			},
-			"linkedin": {
-				"icon": "fab fa-linkedin-square",
-				"label": "LinkedIn"						
-			},
-			"pinterest": {
-				"icon": "fab fa-pinterest",
-				"label": "Pinterest"						
-			},
-			"snapchat": {
-				"icon": "fab fa-snapchat-ghost",
-				"label": "Snapchat"						
-			},
-			"twitter": {
-				"icon": "fab fa-twitter-square",
-				"label": "Twitter"						
-			},
-			"vimeo": {
-				"icon": "fab fa-vimeo",
-				"label": "Vimeo"						
-			},
-			"wordpress": {
-				"icon": "fab fa-wordpress",
-				"label": "Wordpress"						
-			},
-			"youtube": {
-				"icon": "fab fa-youtube",
-				"label": "YouTube"						
-			}
-		}
 	}
 }
