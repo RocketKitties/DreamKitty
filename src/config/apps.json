@@ -193,6 +193,18 @@
 		"color": "red"
 	},
 
+	"image_generator": {
+		"name": "Dreams",
+		"icon": "fa fa-moon",
+		"category": "multimedia",
+		"platform": "all",
+		"access": "user",
+		"disabled": false,
+		"hidden": false,
+		"args": true,
+		"color": "violet"
+	},
+
 	"image_viewer": {
 		"name": "Images",
 		"icon": "fa fa-image",
@@ -200,7 +212,7 @@
 		"platform": "all",
 		"access": "user",
 		"disabled": false,
-		"hidden": false,
+		"hidden": true,
 		"args": true,
 		"color": "gold"
 	},

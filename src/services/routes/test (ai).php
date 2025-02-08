@@ -18,7 +18,6 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
-use Illuminate\Support\Facades\Log;
 use App\Models\Storage\ImageFile;
 use App\Models\Users\User;
 use App\Models\AI\ImageGenerator;
