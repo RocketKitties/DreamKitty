@@ -75,7 +75,7 @@
 			"2025-02-07": "downloads/DreamKitty_2025-02-07.zip"
 		},
 		"development": {
-			"GitHub": "https://github.com/RocketKitty/DreamKitty"
+			"GitHub": "https://github.com/RocketKitties/DreamKitty"
 		}
 	},
 
@@ -87,7 +87,7 @@
 	"settings": {
 		"enable_notifications": true,
 		"mute_sounds": false,
-		"volume": 5
+		"volume": 1
 	},
 
 	"sharing": {
