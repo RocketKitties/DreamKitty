@@ -466,7 +466,8 @@
 			"mouse_mode",
 			"zoom_mode",
 			"zoom",
-			"image"
+			"image",
+			"rotate"
 		],
 		"show_sidebar": true,
 		"sidebar_size": {
