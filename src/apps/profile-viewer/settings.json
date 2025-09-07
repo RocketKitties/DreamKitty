@@ -1,0 +1,12 @@
+{
+	"name": "Profile",
+	"icon": "fa fa-user-circle",
+	"platform": "mobile",
+	"category": "social",
+	"disabled": false,
+	"hidden": false,
+	"args": false,
+	"color": "blue",
+	"avatars_directory": "/Shared/Pictures/Avatars",
+	"cover_photos_directory": "/Shared/Pictures/Desktops"
+}

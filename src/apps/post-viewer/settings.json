@@ -1,0 +1,10 @@
+{
+	"name": "Posts",
+	"icon": "fa fa-newspaper",
+	"platform": "all",
+	"category": "social",
+	"disabled": true,
+	"hidden": true,
+	"args": false,
+	"color": "blue"
+}

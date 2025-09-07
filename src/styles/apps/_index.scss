@@ -30,6 +30,7 @@
 @use "chat-viewer";
 @use "file-browser";
 @use "help-viewer";
+@use "image-generator";
 @use "image-viewer";
 @use "map-viewer";
 @use "post-viewer";
@@ -47,6 +48,7 @@
 @use "theme-manager";
 @use "theme-picker";
 @use "timer";
+@use "token-manager";
 @use "topic-browser";
 @use "topic-viewer";
 @use "tune-editor";

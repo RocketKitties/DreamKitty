@@ -1,0 +1,11 @@
+{
+	"name": "People",
+	"icon": "fa fa-users",
+	"platform": "all",
+	"category": "social",
+	"disabled": false,
+	"hidden": true,
+	"args": true,
+	"color": "blue",
+	"invitation_message": "I'd like to invite you to use this platform, which I use to store, manage, and share my data!"
+}
