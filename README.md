@@ -7,10 +7,10 @@
 DreamKitty is a cloud-based AI image generation platform. Using simple text prompts, you can visualize and share virtually anything that you can dream of.
 
 ![Screen Shot](images/screen-shots/welcome.png)
-Welcome Screen
+*Welcome Screen*
 
 ![Screen Shot](images/screen-shots/desktop.png)
-Desktop
+*Desktop*
 
 ## Features
 

@@ -56,7 +56,7 @@
 			},
 			"RocketKitty": {
 				"icon": "fa fa-rocket",
-				"href": "http://www.rocketkitty.org"
+				"href": "http://rocketkitty.org"
 			}
 		},
 
@@ -80,41 +80,14 @@
 		"template": "welcome.tpl",
 		"background_image": "images/backgrounds/background.jpg",
 
-		"overlay": {
+		"masthead": {
+			"height": "100% - 70px",
 			"background": "linear-gradient(hsla(250, 25%, 33%, 0) 0%, hsla(250, 25%, 15%, 1.0) 100%)"
 		},
-
-		"ribbons": [{
-			"text": "Open Source",
-			"font_weight": "bold",
-			"height": 40,
-			"line_height": 40,
-			"corner": "bottom right",
-			"offset": 60,
-			"url": "#downloads"
-		}, {
-			"text": "Free",
-			"font_weight": "bold",
-			"height": 40,
-			"line_height": 40,
-			"corner": "bottom right",
-			"offset": 20,
-			"color": "black",
-			"background": "white",
-			"shadow": "none",
-			"url": "#installation"
-		}, {
-			"text": "&nbsp;",
-			"font_weight": "bold",
-			"height": 40,
-			"line_height": 40,
-			"corner": "bottom right",
-			"offset": -20,
-			"shadow": "none"
-		}],
 		
 		"carousel": {
 			"template": "welcome/carousel.tpl",
+			"background": "linear-gradient(hsla(250, 25%, 33%, 0) 0%, hsla(250, 25%, 15%, 1.0) 100%)",
 			"color": "white"
 		},
 
@@ -164,7 +137,36 @@
 				"text": "Free, friendly, self-hostable cloud-based AI image generation and sharing.",
 				"color": "white"
 			}
-		}
+		},
+
+		"ribbons": [{
+			"text": "Open Source",
+			"font_weight": "bold",
+			"height": 40,
+			"line_height": 40,
+			"corner": "bottom right",
+			"offset": 60,
+			"url": "#downloads"
+		}, {
+			"text": "Free",
+			"font_weight": "bold",
+			"height": 40,
+			"line_height": 40,
+			"corner": "bottom right",
+			"offset": 20,
+			"color": "black",
+			"background": "white",
+			"shadow": "none",
+			"url": "#installation"
+		}, {
+			"text": "&nbsp;",
+			"font_weight": "bold",
+			"height": 40,
+			"line_height": 40,
+			"corner": "bottom right",
+			"offset": -20,
+			"shadow": "none"
+		}]
 	},
 
 	"page": {
@@ -281,7 +283,7 @@
 						},
 						"RocketKitty": {
 							"icon": "fa fa-rocket",
-							"href": "http://www.rocketkitty.org"
+							"href": "http://rocketkitty.org"
 						}
 					}
 				}
@@ -295,7 +297,7 @@
 		"copyright": {
 			"year": "2025",
 			"logo": "images/logos/rocketkitty-icon-white.svg",
-			"url": "http://www.rocketkitty.org",
+			"url": "http://rocketkitty.org",
 			"entity": "RocketKitty.org"
 		}
 	}

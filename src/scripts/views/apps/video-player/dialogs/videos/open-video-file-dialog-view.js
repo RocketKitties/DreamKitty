@@ -17,9 +17,9 @@
 
 import Directory from '../../../../../models/storage/directories/directory.js';
 import VideoFile from '../../../../../models/storage/media/video-file.js';
-import OpenItemsDialogView from '../../../../../views/apps/file-browser/dialogs/files/open-items-dialog-view.js';
+import OpenFileDialogView from '../../../../../views/apps/file-browser/dialogs/files/open-file-dialog-view.js';
 
-export default OpenItemsDialogView.extend({
+export default OpenFileDialogView.extend({
 
 	//
 	// attributes

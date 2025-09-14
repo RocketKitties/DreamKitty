@@ -66,6 +66,20 @@
 <div class="section">
 	<div class="row">
 		<div class="col-sm-6">
+			<h2><i class="fa fa-smile"></i>It's Easy to Use</h2>
+			<p>The easy to use and familiar user interface blends the power of the cloud with the best aspects of the user interfaces that you already know and love. </p>
+		</div>
+		<div class="col-sm-6">
+			<div class="figure">
+				<img src="images/welcome/smile.svg" />
+			</div>	
+		</div>
+	</div>
+</div>
+
+<div class="section">
+	<div class="row">
+		<div class="col-sm-6">
 			<h2><i class="fa fa-fire"></i>It's Easy to Launch</h2>
 			<p><%= application.name %> makes it <a href="#installation">quick and easy to launch</a> your own personal, customized <%= application.name %> on your own server. </p>
 		</div>
@@ -85,16 +99,39 @@
 <div class="section">
 	<div class="row">
 		<div class="col-sm-6">
+			<h2><i class="fa fa-sign-in-alt"></i>It's Easy to Try</h2>
+			<p>Before installing <%= application.name %> on your own server, you can try it out right here.  Just hit the "Sign Up" button to create an account and give the platform a try.</p>
+		</div>
+		<div class="col-sm-6">
+			<div class="well">
+				<br />
+				<div class="buttons">
+					<a href="#sign-up"><button class="sign-up btn btn-lg">
+						<i class="fa fa-pencil-alt"></i>Sign Up!
+					</button></a>
+				</div>
+				<br />
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="section">
+	<div class="row">
+		<div class="col-sm-6">
 			<h2><i class="fa fa-robot"></i>Choose From A Variety of AI Image Generators</h2>
 			<p><%= application.name %> allows you to access a variety of image generation engines. Currently supported image generators include: </p>
 			<ul>
 				<% if (application.session.has('config')) { %>
-				<% let image_generators = application.session.get('config').image_generators; %>
+				<% let image_generators = config.settings.defaults.image_generators; %>
 				<% if (image_generators) { %>
-				<% for (let i = 0; i < image_generators.length; i++) { %>
-				<% let name = image_generators[i]; %>
-				<% let generator = config.defaults.image_generators[name]; %>
-				<li><a href="<%= generator.url %>" target="_blank"><%= name %></a></li>
+				<% let names = application.session.get('config').image_generators; %>
+				<% if (names) { %>
+				<% for (let i = 0; i < names.length; i++) { %>
+				<% let name = names[i]; %>
+				<% let image_generator = config.settings.defaults.image_generators[name]; %>
+				<li><a href="<%= image_generator.url %>" target="_blank"><%= name %></a></li>
+				<% } %>
 				<% } %>
 				<% } %>
 				<% } %>
@@ -103,12 +140,15 @@
 		<div class="col-sm-6 center aligned" style="display:flex">
 			<div class="logos" style="margin:auto">
 				<% if (application.session.has('config')) { %>
-				<% let image_generators = application.session.get('config').image_generators; %>
+				<% let image_generators = config.settings.defaults.image_generators; %>
 				<% if (image_generators) { %>
-				<% for (let i = 0; i < image_generators.length; i++) { %>
-				<% let name = image_generators[i]; %>
-				<% let generator = config.defaults.image_generators[name]; %>
-				<a href="<%= generator.url %>" target="_blank"><img height="50px" style="margin:25px; max-width:200px" src="<%= generator.logo %>" /></a>
+				<% let names = application.session.get('config').image_generators; %>
+				<% if (names) { %>
+				<% for (let i = 0; i < names.length; i++) { %>
+				<% let name = names[i]; %>
+				<% let image_generator = image_generators[name]; %>
+				<a href="<%= image_generator.url %>" target="_blank"><img height="50px" style="margin:25px; max-width:200px" src="<%= image_generator.logo %>" /></a>
+				<% } %>
 				<% } %>
 				<% } %>
 				<% } %>

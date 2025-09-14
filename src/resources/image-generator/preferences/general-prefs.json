@@ -1,0 +1,23 @@
+[
+	{
+		"name": "background-color",
+		"icon": "fa fa-paint-brush",
+		"text": "Background",
+		"kind": "color",
+		"help": "This is the color used for the viewer background."
+	},
+	{
+		"name": "show-prompt",
+		"icon": "fa fa-quote-left",
+		"text": "Show Prompt",
+		"kind": "true-false",
+		"help": "This is whether or not to show the image generating prompt."
+	},
+	{
+		"name": "home-directory",
+		"icon": "fa fa-folder",
+		"text": "Home Folder",
+		"kind": "directory",
+		"help": "This is the initial directory to use when opening files."
+	}
+]

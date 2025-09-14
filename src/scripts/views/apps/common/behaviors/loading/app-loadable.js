@@ -152,6 +152,14 @@ export default {
 				});
 				break;
 
+			case 'image_generator':
+				import(
+					'../../../image-generator/image-generator-view.js'
+				).then((AppView) => {
+					options.success(AppView.default);
+				});
+				break;
+
 			case 'image_viewer':
 				import(
 					'../../../image-viewer/image-viewer-view.js'
@@ -283,6 +291,14 @@ export default {
 			case 'timer':
 				import(
 					'../../../timer/timer-view.js'
+				).then((AppView) => {
+					options.success(AppView.default);
+				});
+				break;
+
+			case 'token_manager':
+				import(
+					'../../../token-manager/token-manager-view.js'
 				).then((AppView) => {
 					options.success(AppView.default);
 				});

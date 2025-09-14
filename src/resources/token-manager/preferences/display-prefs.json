@@ -1,0 +1,46 @@
+[
+	{
+		"name": "sidebar-panes",
+		"icon": "fa fa-th-large",
+		"text": "Sidebar Panes",
+		"kind": "multiple-answer",
+		"options": {
+			"show-sidebar": "Sidebar"
+		},
+		"help": "This is which auxilliary window panes to display."
+	},
+	{
+		"name": "sidebar-size",
+		"icon": "fa fa-arrows-alt-h",
+		"text": "Sidebar Size (%)",
+		"kind": "range",
+		"options": {
+			"min": 0,
+			"max": 100,
+			"step": 5
+		},
+		"help": "This is the size of the sizebar window pane."
+	},
+	{
+		"name": "sidebar-min-size",
+		"icon": "fa fa-arrows-alt-h",
+		"text": "Sidebar Min Size",
+		"kind": "range",
+		"options": {
+			"min": 0,
+			"max": 500,
+			"step": 25
+		},
+		"help": "This is the minimum size of the sizebar window pane."
+	},
+	{
+		"name": "sidebar-panels",
+		"icon": "fa fa-pause",
+		"text": "Sidebar Panels",
+		"kind": "multiple-answer",
+		"options": {
+			"tokens": "Tokens"
+		},
+		"help": "This is which panels are shown in the sidebar window pane."
+	}
+]
